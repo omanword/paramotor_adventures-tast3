@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Paramotor Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="booking-container">
+        <h1>Book Your Paramotor Adventure</h1>
+        <form id="booking-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" required>
+
+            <label for="team">Select Team:</label>
+            <select id="team" required>
+                <option value="muscat">Muscat</option>
+                <option value="dhahirah">Al Dhahirah</option>
+                <option value="sky">Sky</option>
+            </select>
+
+            <label for="zone">Select Zone:</label>
+            <select id="zone" required>
+                <option value="muscat">Muscat</option>
+                <option value="salalah">Salalah</option>
+                <option value="nizwa">Nizwa</option>
+                <option value="buraimi">Buraimi</option>
+            </select>
+
+            <label for="payment">Upload Payment Bill:</label>
+            <input type="file" id="payment" accept="image/*" required>
+
+            <p><strong>Bank Account Number:</strong> 5558889992200</p>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
