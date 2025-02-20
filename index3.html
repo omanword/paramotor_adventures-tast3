@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramotor Adventures Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Your Paramotor Adventure</h1>
+        <form id="booking-form">
+            <!-- Existing form fields -->
+
+            <label for="team">Select Team:</label>
+            <select id="team" required>
+                <option value="">Select a team</option>
+                <option value="muscat">Muscat Team</option>
+                <option value="dhahirah">Al Dhahirah Team</option>
+                <option value="sky">Sky Team</option>
+            </select>
+
+            <label for="captain">Select Captain:</label>
+            <select id="captain" required>
+                <option value="">Select a captain</option>
+            </select>
+
+            <!-- Other form fields -->
+
+            <label for="payment">Upload Payment Bill:</label>
+            <input type="file" id="payment" accept="image/*" required>
+
+            <p><strong>Bank Account Number:</strong> 5558889992200</p>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+
+        <div id="captain-info" style="display: none;">
+            <p><strong>Captain Name:</strong> <span id="captain-name"></span></p>
+            <p><strong>Team:</strong> <span id="captain-team"></span></p>
+            <p><strong>Phone Number:</strong> <span id="captain-phone"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
